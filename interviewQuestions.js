@@ -14,8 +14,8 @@ console.log([4, '3', 2] > [4, 3, 1]);
 let name = "ali"
 
 function callme(a, ...b) {
-    console.log(a)
-    console.log(b)
+	console.log(a)
+	console.log(b)
 }
 
 callme`My name is ${name} ${name}`
@@ -28,8 +28,8 @@ console.log(1000 === 1_000)
 // 6
 let i = 0
 function data() {
-    console.log(i++)
-    setTimeout(() => data())
+	console.log(i++)
+	setTimeout(() => data())
 }
 data()
 
@@ -43,21 +43,21 @@ console.log(obj[obj1]);
 
 // 8
 const fun = () => {
-    try {
-        return 1;
-    } finally {
-        return 2;
-    }
+	try {
+		return 1;
+	} finally {
+		return 2;
+	}
 }
 console.log(fun())
 
 // 9
 const data = {
-    language: "JS",
-    show: function () {
-        console.log(arguments)
-        console.log(this.language)
-    }
+	language: "JS",
+	show: function () {
+		console.log(arguments)
+		console.log(this.language)
+	}
 }
 const fn = data.show
 fn()
@@ -65,11 +65,33 @@ fn()
 
 // 10
 let value = {
-    current: 1,
-    toString: function () {
-        return this.current++;
-    }
+	current: 1,
+	toString: function () {
+		return this.current++;
+	}
 };
 if (value == 1 && value == 2) {
-    console.log("--------------------true ")
+	console.log("--------------------true ")
 }
+
+// 11
+function add(a) {
+	return function (b) {
+		return a + b;
+	};
+}
+const add5 = add(5);
+console.log(add5(3));
+const add8 = add(8);
+console.log(add8(3));
+
+// 12
+function doSomething(callback) {
+	const data = 42;
+	setTimeout(function () {
+		callback(data); // 'data' is captured in a closure
+	}, 1000);
+}
+doSomething(function (result) {
+	console.log(result); // 42
+});
