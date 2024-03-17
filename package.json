@@ -2,8 +2,8 @@
   "name": "migrations",
   "version": "1.0.0",
   "description": "Just contain some helping regarding different tasks",
-  "main": "",
   "scripts": {
+    "jsonToExcel": "node ./fromJsontoExcel.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "razakassar",
