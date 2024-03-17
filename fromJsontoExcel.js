@@ -50,8 +50,8 @@ function writeToExcel({ entities }, excelFilePath, columnTitles) {
 }
 
 // File paths
-const jsonFilePath = './response_1710671281478.json';  // Path to your JSON file
-const excelFilePath = 'email.xlsx'; // Path where you want to save the Excel file
+const jsonFilePath = '/home/ubuntu/Downloads/response_1710708164012.json';  // Path to your JSON file
+const excelFilePath = 'email5.xlsx'; // Path where you want to save the Excel file
 
 // Read data from JSON file
 const jsonData = readJSONFromFile(jsonFilePath);
