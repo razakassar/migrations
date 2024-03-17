@@ -95,3 +95,8 @@ function doSomething(callback) {
 doSomething(function (result) {
 	console.log(result); // 42
 });
+
+// 13
+const obj = { width: 100, height: 200 }
+const { height, localHeight = height - 50 } = obj
+console.log(localHeight)
