@@ -100,3 +100,14 @@ doSomething(function (result) {
 const obj = { width: 100, height: 200 }
 const { height, localHeight = height - 50 } = obj
 console.log(localHeight)
+
+
+var x = [ 1, 2, 3 ];
+
+// assignment is by reference-copy, so
+// y references the *same* array as x,
+// not another copy of it.
+var y = x;
+y === x;              // true
+y === [ 1, 2, 3 ];    // false
+x === [ 1, 2, 3 ];    // false
