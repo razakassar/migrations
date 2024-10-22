@@ -111,3 +111,8 @@ var y = x;
 y === x;              // true
 y === [ 1, 2, 3 ];    // false
 x === [ 1, 2, 3 ];    // false
+
+
+console.log(0.1 + 0.2 === 0.3); //false
+
+
