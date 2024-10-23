@@ -101,7 +101,7 @@ const obj = { width: 100, height: 200 }
 const { height, localHeight = height - 50 } = obj
 console.log(localHeight)
 
-
+// 14
 var x = [ 1, 2, 3 ];
 
 // assignment is by reference-copy, so
@@ -112,7 +112,15 @@ y === x;              // true
 y === [ 1, 2, 3 ];    // false
 x === [ 1, 2, 3 ];    // false
 
-
+// 15
 console.log(0.1 + 0.2 === 0.3); //false
 
+// 16
+let result = (function() {
+   return
+   {
+      message: "Hello, World!"
+   };
+})();
+console.log(result);
 
