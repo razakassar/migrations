@@ -196,9 +196,9 @@ async removeRevisionsFromCo(list, coId) {
 
 async loadSpecificComponentToLocal(
 	env = "local", condition, infoObj = {//Default values are for Duro Demo
-		company: "5b030d975f57bc1fab388846",
-		creator: "5b030d975f57bc1fab388847",
-		library: "5ba2895df1ec5d1cf67f6c0a"
+		company: "test",
+		creator: "test",
+		library: "test"
 	}) {
 	console.log(' << :::::::::::::::::::::: START :::::::::::::::::::::: >>');
 	const getDbConfig = Object.freeze({
